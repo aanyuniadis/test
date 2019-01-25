@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `user` (
+  `id_user` int(2) NOT NULL AUTO_INCREMENT,
+  `userid` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `aktif` enum('Y','N') NOT NULL DEFAULT 'Y',
+  `nama` varchar(50) NOT NULL,
+  `alamat` varchar(100) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `hp` varchar(20) NOT NULL,
+  PRIMARY KEY (`id_user`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24 ;
